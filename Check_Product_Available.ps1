@@ -7,7 +7,7 @@ $classname = 'a-size-medium a-color-success'
 ### Get the output but only select innertext ###
 $innertext = $webresponse.ParsedHtml.body.getElementsByClassName($classname) | Select-Object -expand innertext
 if($innertext -eq 'Auf Lager. ') {
-   Write-Host "Auf Lager "
+   [System.Windows.Forms.MessageBox]::Show("Auf Lager","Produktverfügbarkeit",0)
 }else {
-   Write-Host "Nicht auf Lager"
+   [System.Windows.Forms.MessageBox]::Show("Nicht auf Lager","Produktverfügbarkeit",0)
 }
