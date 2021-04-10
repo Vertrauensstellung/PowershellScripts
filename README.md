@@ -1,3 +1,2 @@
 # PowershellScripts
-Supporting scripts
-Collection of powershellscripts for usage
+Collection of scripts. May help in daily use while resolving errors.
